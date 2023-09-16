@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(/public/fonts/opensans.ttf);
+}
+
+nav{
+    height:max-content;
+    background-color: #783884;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height:5em;
+    padding:15px 0 15px 15px;
+}
+
+p{
+    padding:15px;
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width:700px) {
+    p{
+        font-size:0.8em;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .logo{
+        height:3.5em;
+    }
+
+    p{
+        font-size:0.6em;
+    }
+}
+
