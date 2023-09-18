@@ -32,6 +32,11 @@ main{
     font-weight: 100;
 }
 
+.mainMessage form{
+    display:flex;
+    flex-direction: column;
+}
+
 .button{
     background-color: white;
     display:flex;
