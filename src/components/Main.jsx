@@ -6,7 +6,9 @@ export function Main(){
             <div className="mainMessage">
                 <h1>Bienvenido a la central de reclamos de nuestra Secretaría</h1>
                 <h3>Podes iniciar reclamos y sugerencias para cualquiera de nuestras areas</h3>
-                <a href="">Iniciar reclamo</a>
+                <div className="button">
+                    <a href="">Iniciar reclamo</a>
+                </div>
             </div>
         </main>
     )

@@ -1,24 +1,49 @@
 @font-face {
     font-family: "Open Sans";
-    src: url(/public/fonts/opensans.ttf);
+    src: url(/fonts/opensans.ttf);
 }
 
 main{
-    height: max-content;
-    background-image:url(/public/images/quilmesbackground.jpeg);
-    height:100vh;
-    background-position: 50%;
+    height:89vh;
     display:flex;
     align-items: center;
     justify-content: center;
+    background-image: url(/images/quilmesbackground.jpeg);
 }
 
 .mainMessage{
     width:500px;
     height:max-content;
-    border:2px solid red;
     color:white;
     background-color: black;
     font-family: "Open Sans", sans-serif;
+    filter:opacity(0.);
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
 }
 
+.mainMessage h1{
+    font-size: 1.6em;
+}
+
+.mainMessage h3{
+    font-weight: 100;
+}
+
+.button{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding:10px;
+    border-radius: 20px;
+    width:150px;
+}
+
+.button a{
+    text-decoration: none;
+    color:black;
+}
