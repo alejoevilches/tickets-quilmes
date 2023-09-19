@@ -3,7 +3,6 @@ import "./Main.css"
 import { useStage } from "../hooks/useStage"
 import { BARRIOS, AREAS } from "../logic/consts"
 
-
 function MainMessage({handleClick}){
     return( 
             <div className="mainMessage">
@@ -19,7 +18,10 @@ function MainMessage({handleClick}){
 function MainInput({handleClick}){
     return (
         <div className="mainMessage">
-            <h2>Completá el formulario para cargar tu reclamo</h2>
+            <div className="messageTitle">
+                <h2>Completá el formulario para cargar tu reclamo</h2>
+                <img src="public/images/close.png" alt="Close icon" onClick={handleClick}/>
+            </div>
             <form action="">
                 <label htmlFor="name">Nombre</label>
                 <input type="text" id="name" required/>
@@ -44,7 +46,8 @@ function MainInput({handleClick}){
                         })}
                     </select>
                 <label htmlFor="message">Ingresá tu reclamo</label>
-                <input type="text" id="message" />
+                <textarea name="message" id="message" cols="20" rows="10"></textarea>
+                <input type="submit" value="Enviar" className="button"/>
             </form>
         </div>
     )
@@ -54,7 +57,7 @@ export function Main(){
     const {stage, handleClick}=useStage();
     return (
         <main>
-            {stage=="message" ? <MainMessage handleClick={handleClick} /> : <MainInput />}
+            {stage=="message" ? <MainMessage handleClick={handleClick} /> : <MainInput handleClick={handleClick} />}
         </main>
     )
 }
