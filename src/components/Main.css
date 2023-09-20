@@ -53,16 +53,21 @@ main{
     padding-right:20px;
 }
 
+.closeButton:hover(){
+    cursor:help;
+}
+
 input, select{
     font-family: "Open Sans", sans-serif;
     width:80%;
 }
 
-input[type="submit"]{
+input > button{
     width:100px;
     font-size:1em;
     padding:5px;
     margin-top:10px;
+    background-color: red;
 }
 
 textarea{
@@ -77,7 +82,7 @@ textarea{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:0 auto;
+    margin: auto;
     padding:10px;
     border-radius: 20px;
     color:black;
@@ -86,4 +91,15 @@ textarea{
 .button a{
     text-decoration: none;
     color:black;
+}
+
+.messageButton{
+    width:100px;
+    font-size:1em;
+    padding:5px;
+    margin-top:10px;
+}
+
+#submitMessage{
+    margin-bottom:10px;
 }
