@@ -7,7 +7,7 @@ function SubmitModal({handleClick}){
     return (
         <div className="mainMessage">
             <h2 id="submitMessage">Tu reclamo ha sido enviado con exito! Nos contactaremos a la brevedad para solicitarte mas informacion de ser necesario.</h2>
-            <a className="button" href="" onClick={handleClick}>Volver a empezar</a>
+            <p className="button" onClick={handleClick}>Volver a empezar</p>
         </div>
     )
 }
@@ -17,9 +17,7 @@ function MainMessage({handleClick}){
             <div className="mainMessage">
                 <h1>Bienvenido a la central de reclamos de nuestra Secretaría</h1>
                 <h3>Podes iniciar reclamos y sugerencias para cualquiera de nuestras areas</h3>
-                <div className="button">
-                    <a href="" onClick={handleClick}>Iniciar reclamo</a>
-                 </div>
+                <p className="button" onClick={handleClick}>Iniciar reclamo</p>
             </div>
         )
 }
@@ -56,7 +54,7 @@ function MainInput({handleClick}){
                     </select>
                 <label htmlFor="message">Ingresá tu reclamo</label>
                 <textarea name="message" id="message" cols="20" rows="10" required></textarea>
-                <input type="button" id="submit" value="Enviar" className="messageButton button" onClick={handleClick}/>
+                <input type="submit" id="submit" value="Enviar" className="messageButton button" onClick={handleClick}/>
             </form>
         </div>
     )

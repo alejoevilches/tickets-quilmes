@@ -86,6 +86,8 @@ textarea{
     padding:10px;
     border-radius: 20px;
     color:black;
+    text-decoration: none;
+    font-size:1em;
 }
 
 .button a{
@@ -102,4 +104,5 @@ textarea{
 
 #submitMessage{
     margin-bottom:10px;
+
 }
