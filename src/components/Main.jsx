@@ -2,6 +2,7 @@
 import "./Main.css"
 import { useStage } from "../hooks/useStage"
 import { BARRIOS, AREAS } from "../logic/consts"
+import { AdminPanel } from "./AdminPanel"
 
 function SubmitModal({handleClick}){
     return (
@@ -15,7 +16,7 @@ function SubmitModal({handleClick}){
 function MainMessage({handleClick}){
     return( 
             <div className="mainMessage">
-                <h1>Bienvenido a la central de reclamos de nuestra Secretaría</h1>
+                <h1>Bienvenidx a la central de reclamos de nuestra Secretaría</h1>
                 <h3>Podes iniciar reclamos y sugerencias para cualquiera de nuestras areas</h3>
                 <p className="button" onClick={handleClick}>Iniciar reclamo</p>
             </div>
@@ -67,6 +68,7 @@ export function Main(){
             {stage=="message" && <MainMessage handleClick={handleClick} />}
             {stage=="input" && <MainInput handleClick={handleClick}/>}
             {stage=="submit" && <SubmitModal handleClick={handleClick}/>}
+            {stage=="admin" && <h1>Que onda</h1>}
         </main>
     )
 }

@@ -16,8 +16,10 @@ export function useStage(){
                 alert("Debe completar todos los campos");
                 return;
             }
-            console.log(formValues)
             return setStage("submit")
+        } else if (e.target.id=="admin"){
+            setStage("admin")
+            return stage;
         }
         setStage(stage === "message" ? "input" : "message");
     }
