@@ -4,11 +4,10 @@
 }
 
 main{
-    height:89vh;
     display:flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/images/quilmesbackground.jpeg);
+    height:89vh;
 }
 
 .mainMessage{
@@ -96,7 +95,7 @@ textarea{
 }
 
 .messageButton{
-    width:100px;
+    width:max-content;
     font-size:1em;
     padding:5px;
     margin-top:10px;
