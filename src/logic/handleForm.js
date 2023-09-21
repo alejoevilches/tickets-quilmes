@@ -4,4 +4,5 @@ export function handleForm(e){
     formData.forEach((value,key)=>{
         formValues[key]=value;
     })
+    return formValues;
     }

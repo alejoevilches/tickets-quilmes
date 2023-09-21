@@ -6,7 +6,17 @@ export function useStage(){
     const handleClick=(e)=>{
         e.preventDefault();
         if (e.target.id=="submit"){
-            handleForm(e)
+            const formValues=handleForm(e);
+            if (
+                formValues.name=="" ||
+                formValues.address=="" ||
+                formValues.tel=="" ||
+                formValues.message==""
+            ){
+                alert("Debe completar todos los campos");
+                return;
+            }
+            console.log(formValues)
             return setStage("submit")
         }
         setStage(stage === "message" ? "input" : "message");
