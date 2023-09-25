@@ -6,7 +6,7 @@ import { BARRIOS, AREAS } from "../logic/consts"
 function SubmitModal({handleClick}){
     return (
         <div className="mainMessage">
-            <h2 id="submitMessage">Tu reclamo ha sido enviado con exito! Nos contactaremos a la brevedad para solicitarte mas informacion de ser necesario.</h2>
+            <h2 id="submitMessage">Tu reclamo ha sido enviado con éxito! Nos contactaremos a la brevedad para solicitarte mas información de ser necesario.</h2>
             <p className="button" onClick={handleClick}>Volver a empezar</p>
         </div>
     )
@@ -16,7 +16,7 @@ function MainMessage({handleClick}){
     return( 
             <div className="mainMessage">
                 <h1>Bienvenidx a la central de reclamos de nuestra Secretaría</h1>
-                <h3>Podes iniciar reclamos y sugerencias para cualquiera de nuestras areas</h3>
+                <h3>Podés iniciar reclamos y sugerencias para cualquiera de nuestras éreas</h3>
                 <p className="button" onClick={handleClick}>Iniciar reclamo</p>
             </div>
         )
@@ -34,9 +34,9 @@ function MainInput({handleClick}){
                 <input type="text" id="name" name="name" required/>
                 <label htmlFor="address">Direccion</label>
                 <input type="text" id="address" name="address" required/>
-                <label htmlFor="tel">Telefono</label>
+                <label htmlFor="tel">Teléfono</label>
                 <input type="number" id="tel" name="tel"/>
-                <label htmlFor="barrio">Seleccione su barrio</label>
+                <label htmlFor="barrio">Seleccioná tu barrio</label>
                 <select name="barrio" id="barrio">
                     {BARRIOS.map(barrio=>{
                         return (
@@ -44,7 +44,7 @@ function MainInput({handleClick}){
                         )
                     })}
                 </select>
-                <label htmlFor="area">Seleccione el área a la que se dirige el reclamo</label>
+                <label htmlFor="area">Seleccioná el área a la que se dirige el reclamo</label>
                     <select name="area" id="area">
                         {AREAS.map(area=>{
                             return (
