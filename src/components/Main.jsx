@@ -2,7 +2,6 @@
 import "./Main.css"
 import { useStage } from "../hooks/useStage"
 import { BARRIOS, AREAS } from "../logic/consts"
-import { AdminPanel } from "./AdminPanel"
 
 function SubmitModal({handleClick}){
     return (
@@ -63,12 +62,12 @@ function MainInput({handleClick}){
 
 export function Main(){
     const {stage, handleClick}=useStage();
+    console.log(stage);
     return (
         <main>
             {stage=="message" && <MainMessage handleClick={handleClick} />}
             {stage=="input" && <MainInput handleClick={handleClick}/>}
             {stage=="submit" && <SubmitModal handleClick={handleClick}/>}
-            {stage=="admin" && <h1>Que onda</h1>}
         </main>
     )
 }

@@ -17,11 +17,9 @@ export function useStage(){
                 return;
             }
             return setStage("submit")
-        } else if (e.target.id=="admin"){
-            setStage("admin")
-            return stage;
         }
-        setStage(stage === "message" ? "input" : "message");
+        setStage(stage === "message" ? "input" : "message");   
+        
     }
     return {handleClick, stage, setStage}
 }
