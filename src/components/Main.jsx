@@ -27,7 +27,7 @@ function MainInput({handleClick}){
         <div className="mainMessage">
             <div className="messageTitle">
                 <h2>Completá el formulario para cargar tu reclamo</h2>
-                <img className="closeButton" src="public/images/close.png" alt="Close icon" onClick={handleClick}/>
+                <img className="closeButton" src="/images/close.png" alt="Close icon" onClick={handleClick}/>
             </div>
             <form action="">
                 <label htmlFor="name">Nombre</label>
